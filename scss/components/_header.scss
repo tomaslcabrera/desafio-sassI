@@ -1,0 +1,37 @@
+@import 'base/listas';
+
+.header {
+    height: 4em;
+    width: 100%;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: nth($colores, 3);
+    .header-logo-img {
+        height: 3em;
+        width: 3em;
+        margin-right: 3em;
+        &:hover {
+            transform: rotate(360deg);
+            transition: all 2s;
+        }
+    }
+    .nav-bar{
+        .nav-bar-list{
+            display: flex;
+            list-style: none;
+            .nav-bar-litem *{
+                padding-right: 2em;
+                text-decoration: none;
+                color: nth($colores, 2);
+                font-size: large;
+                font-weight: 700;
+            }
+            .nav-bar-litem:hover a{
+                color: nth($colores, 1);
+                transition: all 0.3s;
+            }
+        }
+    }
+}

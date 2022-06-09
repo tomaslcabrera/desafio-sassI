@@ -1,0 +1,51 @@
+@import 'base/listas';
+
+.contenedor-sucursales{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 4em repeat(3, 1fr) 6em 3em;
+    grid-template-areas: "header"
+                         "contenedor-main-sucursales"
+                         "contenedor-main-sucursales"
+                         "contenedor-main-sucursales"
+                         "footer"
+                         "footer-derechos";
+                         
+                            .contenedor-main-sucursales{
+                                grid-area: contenedor-main-sucursales;
+                                display: flex;
+                                align-items: center;
+                                flex-direction: column;
+                                justify-content: center;
+                                background-image: url(/imagenes/bandera-argentina-encima-de-la-hamburguesa-aislada-en-negro-96932091.jpg);
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position-x: center;
+                                .sucursales-title{
+                                    height: 8em;
+                                    background-color: nth($colores, 2);
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-weight: 800;
+                                    text-decoration: solid;
+                                }
+                                .contenedor-mapas{
+                                    color: nth($colores, 2);
+                                    font-weight: bolder;
+                                    font-size: large;
+                                    text-decoration: solid;
+                                    margin-bottom: 2em;
+                                    text-align: center;
+                                    .maps{
+                                        border-radius: 15px;
+                                        border: 0.2em nth($colores, 1) solid;
+                                        height: 25rem;
+                                        width: 40rem;
+                                    }
+                                }
+                            }
+                         
+}

@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  line-height: 2em; }
+
+::-webkit-scrollbar {
+  width: 0.7em; }
+
+::-webkit-scrollbar-track {
+  background: gold; }
+
+::-webkit-scrollbar-thumb {
+  background: black; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; }
+
+.header {
+  height: 4em;
+  width: 100%;
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black; }
+  .header .header-logo-img {
+    height: 3em;
+    width: 3em;
+    margin-right: 3em; }
+    .header .header-logo-img:hover {
+      transform: rotate(360deg);
+      transition: all 2s; }
+  .header .nav-bar .nav-bar-list {
+    display: flex;
+    list-style: none; }
+    .header .nav-bar .nav-bar-list .nav-bar-litem * {
+      padding-right: 2em;
+      text-decoration: none;
+      color: gold;
+      font-size: large;
+      font-weight: 700; }
+    .header .nav-bar .nav-bar-list .nav-bar-litem:hover a {
+      color: red;
+      transition: all 0.3s; }
+
+.footer {
+  height: 6em;
+  width: 100%;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black; }
+  .footer .footer-logo {
+    height: 4em;
+    width: 4em; }
+    .footer .footer-logo:hover {
+      transform: scale(1.15);
+      transition: all 0.7s; }
+  .footer .footer-correo {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .footer .footer-correo .footer-correo-img {
+      height: 3em;
+      width: 3em;
+      margin-right: 0.5em;
+      margin-left: 7em; }
+    .footer .footer-correo .footer-correo-text {
+      color: gold;
+      margin-right: 1em; }
+      .footer .footer-correo .footer-correo-text .footer-correo-texta {
+        text-decoration: none;
+        color: gold; }
+        .footer .footer-correo .footer-correo-text .footer-correo-texta:hover {
+          text-decoration: underline;
+          color: red; }
+  .footer .footer-redes .footer-redes-list {
+    list-style: none;
+    display: flex; }
+    .footer .footer-redes .footer-redes-list .footer-redes-litem {
+      padding-right: 0.25em; }
+
+.footer-derechos {
+  grid-area: footer-derechos;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #161616; }
+
+.contenedor-sucursales {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 100%;
+  grid-template-rows: 4em repeat(3, 1fr) 6em 3em;
+  grid-template-areas: "header" "contenedor-main-sucursales" "contenedor-main-sucursales" "contenedor-main-sucursales" "footer" "footer-derechos"; }
+  .contenedor-sucursales .contenedor-main-sucursales {
+    grid-area: contenedor-main-sucursales;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(/imagenes/bandera-argentina-encima-de-la-hamburguesa-aislada-en-negro-96932091.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center; }
+    .contenedor-sucursales .contenedor-main-sucursales .sucursales-title {
+      height: 8em;
+      background-color: gold;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 800;
+      text-decoration: solid; }
+    .contenedor-sucursales .contenedor-main-sucursales .contenedor-mapas {
+      color: gold;
+      font-weight: bolder;
+      font-size: large;
+      text-decoration: solid;
+      margin-bottom: 2em;
+      text-align: center; }
+      .contenedor-sucursales .contenedor-main-sucursales .contenedor-mapas .maps {
+        border-radius: 15px;
+        border: 0.2em red solid;
+        height: 25rem;
+        width: 40rem; }

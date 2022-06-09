@@ -1,0 +1,59 @@
+@import 'base/listas';
+
+.footer{
+    height: 6em;
+    width: 100%;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: nth($colores, 3);
+    .footer-logo{
+        height: 4em;
+        width: 4em;
+        &:hover{
+            transform: scale(1.15);
+            transition: all 0.7s;
+        }
+    }
+    .footer-correo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .footer-correo-img{
+            height: 3em;
+            width: 3em;
+            margin-right: 0.5em;
+            margin-left: 7em; 
+        }
+        .footer-correo-text{
+            color: nth($colores, 2);
+            margin-right: 1em;
+            .footer-correo-texta{
+                text-decoration: none;
+                color: nth($colores, 2);
+                &:hover{
+                    text-decoration: underline;
+                    color: nth($colores, 1);
+                }
+            }  
+        }
+    }
+    .footer-redes{
+        .footer-redes-list{
+            list-style: none;
+            display: flex;
+            .footer-redes-litem{
+                padding-right: 0.25em;
+            }
+        }
+    }
+}
+.footer-derechos{
+    grid-area: footer-derechos;
+    color: nth($colores, 4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(22, 22, 22);
+}

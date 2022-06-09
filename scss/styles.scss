@@ -1,0 +1,36 @@
+@import 'base/listas';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+}
+
+::-webkit-scrollbar{
+    width: 0.7em;
+  }
+  
+  ::-webkit-scrollbar-track{
+    background: nth($colores, 2);
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background: nth($colores, 3);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+    background: #555;
+  }
+
+  @import 'components/header';
+
+  @import 'components/footer';
+
+  @import 'components/mainSucursales';
+
